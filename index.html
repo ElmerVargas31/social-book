@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elmer Vargas Salazar">
+    <meta name="description" content="Example of a website design which is kind of similar to the popular social media (Facebook), however with another name called: SocialBook.">
+    <meta name="keywords" content="SocialBook, social, news, friends, group, marketplace, watch, events, conversation">
+    <!--Title-->
+    <title>SocialBook</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="nav-left">
+            <img src="img/logo.png" class="logo" alt="SocialBook Logo">
+            <ul>
+                <li><img src="img/notification.png" alt="Notifications"></li>
+                <li><img src="img/inbox.png" alt="Inbox"></li>
+                <li><img src="img/video.png" alt="Video"></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="img/search.png" alt="Search">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="img/profile-pic.png" alt="Profile Picture">
+            </div>
+        </div>
+
+        <!--Settings Menu-->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png" alt="Profile Picture">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png" alt="Feedback">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="img/setting.png" class="settings-icon" alt="">
+                    <a href="#">Settings & Privacy <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/help.png" class="settings-icon" alt="">
+                    <a href="#">Help & Support <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/display.png" class="settings-icon" alt="">
+                    <a href="#">Display & Accesibility <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/logout.png" class="settings-icon" alt="">
+                    <a href="#">Logout <img src="img/arrow.png" width="10px"></a>
+                </div>
+            </div><!--End of Settings Menu Inner-->
+        </div><!--End of Settings Menu-->
+    </nav><!--End of Navigation Bar-->
+
+    <!--Container-->
+    <div class="container">
+
+        <!--Left SideBar-->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="img/news.png" alt=""> Latest News</a>
+                <a href="#"><img src="img/friends.png" alt=""> Friends</a>
+                <a href="#"><img src="img/group.png" alt=""> Group</a>
+                <a href="#"><img src="img/marketplace.png" alt=""> Marketplace</a>
+                <a href="#"><img src="img/watch.png" alt=""> Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="img/shortcut-1.png" alt=""> Web Developers</a>
+                <a href="#"><img src="img/shortcut-2.png" alt=""> Web Design Course</a>
+                <a href="#"><img src="img/shortcut-3.png" alt=""> Full Stack Development</a>
+                <a href="#"><img src="img/shortcut-4.png" alt=""> Website Experts</a>
+            </div>
+        </div><!--End of Left SideBar-->
+
+        <!--Main Content-->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/upload.png" alt="Upload Story">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="img/member-1.png" alt="Story Member 1">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="img/member-2.png" alt="Story Member 2">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="img/member-3.png" alt="Story Member 3">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="img/member-4.png" alt="Story Member 4">
+                    <p>John Doe</p>
+                </div>
+            </div><!--End of Story Gallery-->
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png" alt="Profile Picture">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="img/live-video.png" alt=""> Live Video</a>
+                        <a href="#"><img src="img/photo.png" alt=""> Photo/Video</a>
+                        <a href="#"><img src="img/feeling.png" alt=""> Feeling Activity</a>
+                    </div>
+                </div>
+            </div><!--End of Write Post Container-->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png" alt="Profile Picture">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">At <span>@Vargas Web Projects</span> every employee is completely committed to apply team-work day by day when preparing projects to its customers. <a href="#">#TeamWork</a> <a href="#">#WebDevelopment</a></p>
+                <img src="img/feed-image-1.png" alt="Post Image 1" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="Amount of Likes"> 120</div>
+                        <div><img src="img/comments.png" alt="Amount of Comments"> 45</div>
+                        <div><img src="img/share.png" alt="Amount of Shares"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt="Profile Picture"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div><!--End of Post Container 1-->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png" alt="Profile Picture">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2021, 14:15 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Besides daily chores inside the workplace, it is highly fundamental and mind-healthy to take advantage of relaxation times with friends or family. <a href="#">#TimetoChill</a> </p>
+                <img src="img/feed-image-2.png" alt="Post Image 2" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like.png" alt="Amount of Likes"> 90</div>
+                        <div><img src="img/comments.png" alt="Amount of Comments"> 25</div>
+                        <div><img src="img/share.png" alt="Amount of Shares"> 10</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt="Profile Picture"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div><!--End of Post Container 2-->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png" alt="Profile Picture">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24 2021, 16:25 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Enroll now at <span>@Elmer's English Academy</span> to get better little by little in the english language. And so, reach your greatest dream to travel to England (Europe). <a href="#">#LearnEnglish</a> <a href="#">#EuropeTravel</a></p>
+                <img src="img/feed-image-3.png" alt="Post Image 3" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like.png" alt="Amount of Likes"> 145</div>
+                        <div><img src="img/comments.png" alt="Amount of Comments"> 26</div>
+                        <div><img src="img/share.png" alt="Amount of Shares"> 22</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt="Profile Picture"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div><!--End of Post Container 3-->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png" alt="Profile Picture">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 25 2021, 09:16 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">This following article is deserved to be read, so you will keep in mind what are some tips to become more productive in the workplace or when you're studying. <a href="#">#Productivity</a></p>
+                <img src="img/feed-image-4.png" alt="Post Image 4" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like.png" alt="Amount of Likes"> 28</div>
+                        <div><img src="img/comments.png" alt="Amount of Comments"> 10</div>
+                        <div><img src="img/share.png" alt="Amount of Shares"> 12</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt="Profile Picture"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div><!--End of Post Container 4-->
+
+            <!--Load More Button-->
+            <button type="button" class="load-more">Load More</button>
+        </div><!--End of Main Content-->
+
+        <!--Right SideBar-->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="img/advertisement.png" class="sidebar-ads" alt="Advertisement">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-1.png" alt="Member 1">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-2.png" alt="Member 2">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-3.png" alt="Member 3">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+        </div><!--End of Right SideBar-->
+    </div><!--End of Container-->
+
+    <footer>
+        <p>Copyright ©2021 - Elmer Vargas Salazar</p>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="js/socialbook.js"></script>
+</body>
+</html>
